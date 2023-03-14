@@ -47,6 +47,7 @@ nav {
   left: 0;
   right: 0;
   border-bottom: 10px solid #8d714f;
+  border-left: 10px solid #8d714f;
   border-radius: 10px;
   flex-wrap: nowrap;
   overflow: hidden;
@@ -117,7 +118,9 @@ nav {
 #startButton:hover {
   background-color: #331e05;
   color: #e3d9c9;
-  border: 5px solid #c59366;
+  border: 2px solid #c59366;
+  border-bottom: 10px solid #c59366;
+  border-left: 10px solid #c59366;
 }
 
 .section {
@@ -185,6 +188,68 @@ nav {
 #resume {
     max-width: 38vw;
     max-height: 100vh;
+}
+
+#projectsSection {
+  max-width: 70vw;
+  min-height: 50vh;
+  margin: 0 auto;
+  float: center;
+  padding-top: 1px;
+}
+
+#projectsContent {
+  text-align: center;
+}
+
+.project {
+  background-color: #331e05;
+  min-height: 55vh;
+  min-width: 25vw;
+  margin: 1vw;
+  display: inline-block;
+  border-radius: 10px;
+  border: 10px solid #8d714f;
+}
+
+#project1 {
+  grid-area: project1;
+}
+
+#project2 {
+  grid-area: project2;
+}
+
+#contactSection{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 30vw;
+}
+
+.form {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: #331e05;
+  max-width: 25vw;
+  min-height: 50vh;
+  max-height: 60vh;
+}
+
+.form-element {
+  font-weight: bold;
+  text-align: left;
+  margin: 100px 20px 0px 20px;
+  color: #e3d9c9;
+  font-size: 2vw;
+}
+
+.form-box {
+  max-width: 10vw;
+  min-height: 2vw;
+  border-radius: 10px;
+  margin: 10px;
+  float: right;
 }
 
 @keyframes fadeIn {
