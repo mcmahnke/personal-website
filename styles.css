@@ -7,8 +7,9 @@ body {
   padding-top: 10px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
+    display: grid;
+    grid-template-columns: auto;
+  grid-template-rows: repeat(5, auto);
   grid-template-areas:
     "intro"
     "intro"
@@ -52,14 +53,16 @@ nav {
 }
 
 .flex-item {
-  width: 200px;
+  width: 20vw;
+  max-height: 10vh;
   font-size: 18px;
   margin: 5px 0px 5px 0px;
   text-align: center;
 }
 
 .link-text {
-  width: 200px;
+  width: 20vw;
+  max-height: 10vh;
   display: block;
   text-decoration: none;
   font-weight: bold;
@@ -78,32 +81,29 @@ nav {
   color: #e3d9c9;
 }
 
-/*
-.flex-item:last-child {
-    align-self: flex-end;
-}*/
-
 .introTextBox {
-  width: 95vw;
-  height: 95vh;
+  grid-area: intro;
+  max-width: 95vw;
+  min-height: 95vh;
   top: 0;
   left: 0;
-  grid-area: intro;
+  padding-bottom: 200px;
 }
 
 #introText {
   color: #e3d9c9;
-  font-size: 128px;
-  max-width: 1400px;
+  font-size: 7.5vw;
+  max-width: 85vw;
   margin-left: 20px;
+  overflow: hidden;
 }
 
 #startButton {
   text-decoration: none;
-  height: 200px;
-  width: 600px;
-  font-size: 80px;
-  margin-top: -175px;
+  min-height: 20vh;
+  min-width: 30vw;
+  font-size: 4vw;
+  margin-top: -250px;
   background-color: #c59366;
   float: right;
   color: #331e05;
@@ -129,7 +129,7 @@ nav {
 }
 
 .sectionHeader {
-    font-size: 64px;
+    font-size: 3vw;
     color: #331e05;
     margin: 20px;
     border-bottom: 4px solid #331e05;
@@ -141,16 +141,18 @@ nav {
     border: 10px solid #8d714f;
 }
 
-#aboutAnchor {
-    padding: 125px;
+.anchor {
+    padding: 10vh;
 }
 
 #aboutSection {
     grid-area: about;
-    min-height: 850px;
+    min-height: 50vh;
     max-width: 70vw;
     margin: 0 auto;
     float: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 #aboutContent{
@@ -158,29 +160,31 @@ nav {
 }
 
 #myImage {
-    width: 25vw;
+   max-width: 25vw;
+   max-height: 65vh;
     margin-left: 20px;
 }
 
 .aboutText{
-    width: 35vw;
-    height: 50vh;
+    max-width: 35vw;
+    min-height: 0vw;
     padding-left: 30px;
     color: #331e05;
 }
-
-
 
 #previousSection {
     grid-area: previous;
     text-align: center;
     margin: 0 auto;
-    max-width: 1000px;
-    min-height: 1250px;
+    max-width: 45vw;
+    max-height: 110vh;
+    padding-top: 1px;
+    padding-bottom: 20px;
 }
 
 #resume {
-    width: 43vw;
+    max-width: 38vw;
+    max-height: 100vh;
 }
 
 @keyframes fadeIn {
