@@ -3,7 +3,7 @@ let button = document.getElementById("startButton");
 
 let i = 0;
 let text = "Hello... My Name is Matthew Mahnke. Welcome to my Website.";
-let speed = 100;
+let speed = 50;
 
 const typing = function () {
   if (i < text.length) {
