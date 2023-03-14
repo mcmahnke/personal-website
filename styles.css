@@ -1,0 +1,164 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #331e05;
+  padding-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "intro"
+    "about"
+    "previous"
+    "projects"
+    "contact";
+}
+
+p {
+  color: #e3d9c9;
+  font-size: 25px;
+}
+
+nav {
+    margin: 0;
+    height: 0;
+    animation: fadeIn 2s;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-container {
+  background-color: #c59366;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  font-size: 0px;
+  margin: 10px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 10px solid #8d714f;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.flex-item {
+  width: 200px;
+  font-size: 18px;
+  margin: 5px 0px 5px 0px;
+  text-align: center;
+}
+
+.link-text {
+  width: 200px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 80px;
+  color: #331e05;
+}
+
+.flex-item:hover {
+  background-color: #331e05;
+  color: #e3d9c9;
+  border-radius: 10px;
+}
+
+.link-text:hover {
+  color: #e3d9c9;
+}
+
+/*
+.flex-item:last-child {
+    align-self: flex-end;
+}*/
+
+.introTextBox {
+  width: 95vw;
+  height: 95vh;
+  top: 0;
+  left: 0;
+  grid-area: intro;
+}
+
+#introText {
+  color: #e3d9c9;
+  font-size: 128px;
+  max-width: 1400px;
+  margin-left: 20px;
+}
+
+#startButton {
+  text-decoration: none;
+  height: 200px;
+  width: 600px;
+  font-size: 80px;
+  margin-top: -175px;
+  background-color: #c59366;
+  float: right;
+  color: #331e05;
+  border-radius: 10px;
+  font-weight: bold;
+  border-bottom: 10px solid #8d714f;
+  animation: fadeIn 3.5s;
+}
+
+#startButton:hover {
+  background-color: #331e05;
+  color: #e3d9c9;
+  border: 5px solid #c59366;
+}
+
+.aboutSection {
+    grid-area: about;
+  background-color: #c59366;
+    margin: 10px;
+    border-radius: 10px;
+    min-height: 750px;
+  border-bottom: 10px solid #8d714f;
+}
+
+#aboutAnchor {
+    padding: 125px;
+}
+
+.myImage {
+    height: 50vh;
+    width: 30vw;
+    margin-left: 20px;
+    border-radius: 10px;
+  border: 10px solid #8d714f;
+}
+
+.aboutText{
+    width: 50vw;
+    height: 50vh;
+    display: inline-block;
+    padding-left: 30px;
+    color: #331e05;
+}
+
+.sectionHeader {
+    font-size: 64px;
+    color: #331e05;
+    margin: 20px;
+    border-bottom: 4px solid #331e05;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

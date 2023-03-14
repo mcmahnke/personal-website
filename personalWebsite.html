@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script defer src="personalWebsite.js"></script>
+  </head>
+  <body>
+    <nav class="hidden">
+      <ul class="flex-container">
+        <li class="flex-item">
+          <a class="link-text" href="#aboutAnchor">About Me</a>
+        </li>
+        <li class="flex-item">
+          <a class="link-text" href="#previousAnchor">Previous Work</a>
+        </li>
+        <li class="flex-item">
+          <a class="link-text" href="#projectsAnchor">Projects</a>
+        </li>
+        <li class="flex-item">
+          <a class="link-text" href="#contactAnchor">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="introTextBox">
+      <h1 id="introText"></h1>
+      <button
+        class="hidden"
+        id="startButton"
+        onclick="window.location.href='#aboutAnchor;'"
+      >
+        Get Started
+      </button>
+    </div>
+    <div class="hidden sections">
+      <div class="aboutSection">
+        <a id="aboutAnchor">
+        </a>
+        <h2 class="sectionHeader">About Me</h2>
+        <img src="./images/pictureofme.jpg" class="myImage">
+        <p class="aboutText">
+          Hello! My name is Matthew Mahnke, I'm a current student at Portland
+          State University pursuing a Bachelor's degree in computer science with
+          a projected graduation date of March 2024. While I don't yet have any
+          professional experience, I'll be completing an internship in software
+          engineering this summer with a focus in working with Python. I am
+          proficient in C++, Python and Java, with brief experience in HTML,
+          CSS, and JavaScript, which I'm hoping to work with a lot more in the
+          near future. A majority of my classwork so far has focused on data
+          structures and learning core fundamentals of computer science, for
+          example object oriented programming and dynamic programming, but I'm
+          excited to broaden my experience in the next few terms with classes on
+          more specialized topics such as virtual reality and machine learning.
+          I have a lot of areas of computer science I'm interested in that I've
+          yet to experience fully, which makes it difficult to visualize what my
+          future career may be like, but I'm very interested in machine learning
+          and full-stack development!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
