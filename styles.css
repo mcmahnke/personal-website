@@ -86,6 +86,7 @@ nav {
   grid-area: intro;
   max-width: 95vw;
   max-height: 95vh;
+  margin-top: -5vw;
   top: 0;
   left: 0;
   padding-bottom: 200px;
