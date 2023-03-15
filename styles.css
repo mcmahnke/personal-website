@@ -216,8 +216,44 @@ nav {
   grid-area: project1;
 }
 
+#project1Header {
+  font-size: 2vw;
+  color: #e3d9c9;
+  border-bottom: 4px solid #e3d9c9;
+  text-align: center;
+  max-width: 25vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#project1Img {
+  max-width: 50vw;
+}
+
+#project1Text {
+}
+
 #project2 {
   grid-area: project2;
+}
+
+#project2Header {
+  font-size: 2vw;
+  color: #e3d9c9;
+  border-bottom: 4px solid #e3d9c9;
+  text-align: center;
+  max-width: 25vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#project2Img {
+  max-width: 40vw;
+  min-width: 30vw;
+}
+
+#project2Text {
+
 }
 
 #contactSection{
@@ -234,13 +270,14 @@ nav {
   max-width: 25vw;
   min-height: 50vh;
   max-height: 60vh;
+  border: 10px solid #8d714f;
 }
 
 .form-element {
   font-weight: bold;
   text-align: left;
-  margin: 100px 20px 0px 20px;
   color: #e3d9c9;
+  padding: 20px;
   font-size: 2vw;
 }
 
@@ -250,6 +287,39 @@ nav {
   border-radius: 10px;
   margin: 10px;
   float: right;
+}
+
+#btnContainer {
+  margin: 0 auto;
+  display: inline-flex;
+  float: center;
+}
+
+#btn-primary {
+  min-width: 5vw;
+  min-height: 5vh;
+  margin: 0 auto;
+  margin-top: 120px;
+  background-color: #c59366;
+  color: #331e05;
+  border: 0;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#btn-secondary { 
+  min-width: 5vw;
+  min-height: 5vh;
+  margin: 0 auto;
+  background-color: #c59366;
+  color: #331e05;
+  border: 0;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
 }
 
 @keyframes fadeIn {
