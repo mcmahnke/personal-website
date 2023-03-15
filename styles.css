@@ -85,7 +85,7 @@ nav {
 .introTextBox {
   grid-area: intro;
   max-width: 95vw;
-  min-height: 95vh;
+  max-height: 95vh;
   top: 0;
   left: 0;
   padding-bottom: 200px;
@@ -97,6 +97,7 @@ nav {
   max-width: 85vw;
   margin-left: 20px;
   overflow: hidden;
+  margin-top: 10vw;
 }
 
 #startButton {
@@ -224,6 +225,7 @@ nav {
   max-width: 25vw;
   margin: 0 auto;
   margin-bottom: 20px;
+  padding-bottom: 2px;
 }
 
 #project1Img {
@@ -231,6 +233,26 @@ nav {
 }
 
 #project1Text {
+}
+
+.githubLink {
+  min-height: 10vh;
+  min-width: 10vw;
+  color: #331e05;
+  background-color: #c59366;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-bottom: 10px solid #8d714f;
+  border-left: 10px solid #8d714f;
+}
+
+.githubLink:hover {
+  background-color: #331e05;
+  color: #c59366;
+  border: 2px solid #c59366;
+  border-bottom: 10px solid #c59366;
+  border-left: 10px solid #c59366;
 }
 
 #project2 {
@@ -287,6 +309,12 @@ nav {
   border-radius: 10px;
   margin: 10px;
   float: right;
+  background-color: #e3d9c9;
+  border-bottom: 5px solid #8d714f;
+  border-left: 5px solid #8d714f;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #331e05;
+  font-size: 1vw;
 }
 
 #btnContainer {
@@ -300,6 +328,7 @@ nav {
   min-height: 5vh;
   margin: 0 auto;
   margin-top: 120px;
+  margin-right: 12px;
   background-color: #c59366;
   color: #331e05;
   border: 0;
@@ -307,12 +336,24 @@ nav {
   border-radius: 10px;
   font-weight: bold;
   text-align: center;
+  border-bottom: 5px solid #8d714f;
+  border-left: 5px solid #8d714f;
+}
+
+#btn-primary:hover {
+  background-color: #331e05;
+  color: #c59366;
+  border: 2px solid #c59366;
+  border-bottom: 5px solid #c59366;
+  border-left: 5px solid #c59366;
 }
 
 #btn-secondary { 
   min-width: 5vw;
   min-height: 5vh;
   margin: 0 auto;
+  margin-top: 120px;
+  margin-left: 12px;
   background-color: #c59366;
   color: #331e05;
   border: 0;
@@ -320,13 +361,128 @@ nav {
   border-radius: 10px;
   font-weight: bold;
   text-align: center;
+  border-bottom: 5px solid #8d714f;
+  border-left: 5px solid #8d714f;
 }
 
+#btn-secondary:hover {
+  background-color: #331e05;
+  color: #c59366;
+  border: 2px solid #c59366;
+  border-bottom: 5px solid #c59366;
+  border-left: 5px solid #c59366;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+  .introTextBox {
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+  }
+
+  #introText {
+    padding-top: 10vw;
+    font-size: 14vw;
+  }  
+
+  #startButton {
+    margin: 0 auto;
+    margin-top: -35px;
+    font-size: 10vw;
+    font-size: 10vw;
+    width: 70vw;
+    margin-right: 50px;
+    min-height: 15vh;
+  }
+
+  #aboutSection{
+    text-align: center;
+    min-width: 90vw;
+  }
+
+  .sectionHeader {
+    font-size: 8vw;
+  }
+
+  #myImage {
+    min-width: 70vw;
+    float: center;
+    margin: 0 auto;
+  }
+
+  #aboutContent {
+    display: block;
+    text-align: center;
+  }
+
+  .aboutText {
+    margin: 0 auto;
+    min-width: 75vw;
+  }
+
+  #previousSection {
+    min-width: 90vw;
+  }
+
+  #resume {
+    min-width: 80vw;
+  }
+
+  #projectsSection {
+    min-width: 90vw;
+  }
+
+  #project1Header {
+    font-size: 5vw;
+    min-width: 50vw;
+  }
+
+  #project1Img {
+    min-width: 75vw;
+  }
+
+  #project2Header {
+    font-size: 5vw;
+    min-width: 50vw;
+  }
+
+  #project2Img {
+    min-width: 75vw;
+  }
+
+  .githubLink {
+    min-width: 70vw;
+  }
+
+  #contactSection {
+    min-width: 90vw;
+  }
+
+  #contactForm {
+    min-width: 75vw;
+  }
+
+  .form-element {
+    font-size: 5vw;
+  }
+
+  .form-box {
+    min-width: 30vw;
+    min-height: 3vh;
+    font-size: 2.5vw;
+  }
+
+  .anchor {
+    padding-top: 12vh;
   }
 }

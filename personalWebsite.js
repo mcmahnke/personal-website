@@ -17,11 +17,6 @@ const buttonFade = function() {
     button.classList.remove("hidden");
 }
 
-/*const hideIntroText = function() { 
-    document.querySelector(".introTextBox").classList.add("hidden");
-    document.querySelector(".sections").style.position = "fixed";
-}*/
-
 typing();
 
 setTimeout(buttonFade, speed * 1.3 * text.length);
@@ -31,8 +26,4 @@ button.addEventListener("click", function() {
     let sections = document.querySelector(".sections");
     sections.classList.remove("hidden");
     window.location.hash = "aboutAnchor";
-  /*  setTimeout(hideIntroText, speed*5);
-    setTimeout(function(){
-        sections.style.position = "static";
-    }, speed * 6);*/
 });
