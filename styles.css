@@ -376,7 +376,7 @@ nav {
   }
 }
 
-@media (min-width: 0px) and (max-width: 992px) {
+@media (min-width: 100px) and (max-width: 992px) {
   .flex-container {
     text-align: left;
     max-height: 10vw;
