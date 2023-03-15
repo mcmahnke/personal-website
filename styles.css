@@ -376,7 +376,21 @@ nav {
   }
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 0px) and (max-width: 992px) {
+  .flex-container {
+    text-align: left;
+    max-height: 10vw;
+  }
+  
+  .flex-item {
+    max-height: 10vw;
+  }
+
+  .link-text {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+
   .introTextBox {
     text-align: left;
     margin: 0 auto;
